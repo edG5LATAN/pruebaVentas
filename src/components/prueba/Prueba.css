@@ -1,0 +1,21 @@
+.prueba{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.prueba-botones{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1em;
+  
+}
+.prueba-botones>button{
+  width: 120px;
+  padding: 4px;
+}

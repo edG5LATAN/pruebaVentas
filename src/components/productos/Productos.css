@@ -1,0 +1,72 @@
+.productos{
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.productos-form{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.productos-form>form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid black;
+}
+.productos-form>form>input ,label{
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 350px;
+}
+.productos-table{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.productos-form-botones{
+width: 100%;
+margin: 5px;
+padding: 5px;
+display: flex;
+justify-content: center;
+gap: 1em;
+flex-wrap: wrap;
+/* background-color: red; */
+margin: 10px 0;
+}
+.productos-form-botones>button{
+  width: 120px;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.productos-form-botones>button:hover{
+  cursor: pointer;
+}
+.productos-table>table{
+  width: 90%;
+}
+.productos-table>table, tr, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.productos-table>table>thead{
+  background-color: black;
+  color: white;
+}
+.productos-table>table>tbody>tr:hover{
+  background-color: lightblue;
+  cursor: pointer;
+}

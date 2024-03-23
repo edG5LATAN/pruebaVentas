@@ -1,0 +1,60 @@
+.tienda{
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+.tienda-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+}
+.tienda-form>form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.tienda-form>form>label, input{
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tiendas-form-botones{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 10px 0;
+  gap: 1em;
+}
+.tiendas-form-botones>button{
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 120px;
+}
+.tiendas-table{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.tiendas-table>table{
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tiendas-table>table>thead{
+  background-color: black;
+  color: white;
+}
+.tiendas-table>table>tbody>tr:hover{
+  background-color: lightblue;
+}

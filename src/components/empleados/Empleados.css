@@ -1,0 +1,61 @@
+.empleado{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction:column ;
+  min-height: 800px;
+  padding: 20px 0;
+}
+
+.empleado-form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.empleado-form>form{
+  display: flex;
+  flex-direction: column;
+}
+.empleado-form>form>input , label{
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.empleado-form-botones{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 10px 0;
+  gap: 1em;
+}
+.empleado-form-botones>button{
+  width: 120px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+/* tabla */
+.empleado-tabla{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empleado-tabla>table{
+  width: 90%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.empleado-tabla>table>thead{
+  background-color: black;
+  color: white;
+}
+.empleado-tabla>table>tbody>tr:hover{
+  background-color: lightblue;
+}
+

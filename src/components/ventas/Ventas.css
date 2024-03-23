@@ -1,0 +1,62 @@
+.ventas{
+  width: 100%;
+  min-height: 800px;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+.ventas-forms{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+.ventas-forms>form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ventas-forms>form>input, label{
+  padding: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.ventas-botones{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 10px 0;
+}
+.ventas-botones>button{
+  width: 120px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+.ventas-tabla{
+  width: 98%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.ventas-tabla>table{
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border-collapse: collapse;
+  text-align: center;
+}
+.ventas-tabla>table>thead>tr{
+  background-color: black;
+  color: white;
+}
+.ventas-tabla>table>tbody>tr:hover{
+  background-color: lightblue;
+  cursor: pointer;
+}
