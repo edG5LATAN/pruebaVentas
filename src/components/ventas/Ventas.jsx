@@ -29,28 +29,26 @@ function Ventas() {
   const [cantidad,setcantidad]=useState("")
   const [tienda,settienda]=useState("")
   const [precio,setprecio]=useState("")
+  const [error,seterror]=useState("")
 
   const agregar = (e) => {
     e.preventDefault();
-    e.target.parentNode.parentNode[2].value;
-    let newd = {
-      // id: e.target.parentNode.parentNode[0].value,
-      // fecha: e.target.parentNode.parentNode[1].value,
-      // vendedor: e.target.parentNode.parentNode[2].value,
-      // producto: e.target.parentNode.parentNode[3].value,
-      // cantidad: e.target.parentNode.parentNode[4].value,
-      // tienda: e.target.parentNode.parentNode[5].value,
-      // precio: e.target.parentNode.parentNode[6].value,
-      id:id,
-      fecha:fecha,
-      vendedor:vendedor,
-      producto:producto,
-      cantidad:cantidad,
-      tienda:tienda,
-      precio:precio
-    };
-    setdata([...data, newd]);
-    lipiarInput(e);
+    if (id!="" && fecha!="" && vendedor!="" && producto!=""&&cantidad!=""&&tienda!=""&&precio!="") {
+      let newd = {
+        id:id,
+        fecha:fecha,
+        vendedor:vendedor,
+        producto:producto,
+        cantidad:cantidad,
+        tienda:tienda,
+        precio:precio
+      };
+      setdata([...data, newd]);
+      lipiarInput(e);
+    } else {
+      seterror("Rellena todas las cacillas")
+    }
+    
   };
 
   const mostrarDatos=(e)=>{
@@ -75,6 +73,7 @@ function Ventas() {
     setcantidad("")
     settienda("")
     setprecio("")
+    seterror("")
   };
   return (
     <div className="ventas">
@@ -100,6 +99,8 @@ function Ventas() {
 
           <label>precio</label>
           <input onChange={(e)=>setprecio(e.target.value)} type="number" placeholder="ingrese el precio" value={precio} />
+          <p className="ventas-error">{error}</p>
+
           <div className="ventas-botones">
             <button onClick={agregar}>agregar</button>
             <button>editar</button>

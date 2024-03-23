@@ -18,7 +18,7 @@ function Header() {
           <li onClick={()=>navigate("/empleados")}>empleados</li>
           <li onClick={()=>navigate("/tiendas")}>tiendas</li>
           <li onClick={()=>navigate("/ventas")}>ventas</li>
-          <li onClick={()=>navigate("/prueba")}>prueba</li>
+          {/* <li onClick={()=>navigate("/prueba")}>prueba</li> */}
         </ul>
       </nav>
     </div>

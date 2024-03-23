@@ -7,7 +7,7 @@ import Productos from "./components/productos/Productos";
 import Empleados from "./components/empleados/Empledado";
 import Tiendas from "./components/tiendas/Tiendas";
 import Ventas from "./components/ventas/Ventas";
-import Prueba1 from "./components/prueba/Prueba1";
+// import Prueba1 from "./components/prueba/Prueba1";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/empleados" element={<Empleados />} />
           <Route path="/tiendas" element={<Tiendas />} />
           <Route path="/ventas" element={<Ventas />} />
-          <Route path="/prueba" element={<Prueba1 />} />
+          {/* <Route path="/prueba" element={<Prueba1 />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
