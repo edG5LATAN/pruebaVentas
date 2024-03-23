@@ -33,7 +33,7 @@ function Ventas() {
 
   const agregar = (e) => {
     e.preventDefault();
-    if (id!="" && fecha!="" && vendedor!="" && producto!=""&&cantidad!=""&&tienda!=""&&precio!="") {
+    if ( fecha!="" && vendedor!="" && producto!=""&&cantidad!=""&&tienda!=""&&precio!="") {
       let newd = {
         id:id,
         fecha:fecha,

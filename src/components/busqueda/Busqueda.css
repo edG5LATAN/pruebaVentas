@@ -1,0 +1,43 @@
+.busqueda{
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.busqueda-busqueda{
+  padding: 10px 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.busqueda-opciones{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+.busqueda-busqueda>label{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+.busqueda-busqueda>input{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+.busqueda-tabla{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.busqueda-tabla>table{
+  width: 98%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+  border-collapse: collapse;
+}

@@ -1,0 +1,38 @@
+.admin{
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-nav{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+  align-items: center;
+  padding: 15px 0;
+  gap: 1em;
+  height: 80px;
+}
+.admin-nav>a{
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  
+}
+.admin-nav>a:hover{
+  color: white;
+  background-color: blue;
+
+}
+.admin-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

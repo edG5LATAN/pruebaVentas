@@ -7,7 +7,8 @@ import Productos from "./components/productos/Productos";
 import Empleados from "./components/empleados/Empledado";
 import Tiendas from "./components/tiendas/Tiendas";
 import Ventas from "./components/ventas/Ventas";
-// import Prueba1 from "./components/prueba/Prueba1";
+import Admin from "./components/admin/Admin";
+import Busqueda from "./components/busqueda/Busqueda";
 
 function App() {
   return (
@@ -16,11 +17,14 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/empleados" element={<Empleados />} />
-          <Route path="/tiendas" element={<Tiendas />} />
+          
           <Route path="/ventas" element={<Ventas />} />
-          {/* <Route path="/prueba" element={<Prueba1 />} /> */}
+          <Route path="/admin/*" element={<Admin />}>
+            <Route path="productos" element={<Productos />} />
+            <Route path="empleados" element={<Empleados />} />
+            <Route path="tiendas" element={<Tiendas />} />
+            <Route path="busqueda" element={<Busqueda />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>

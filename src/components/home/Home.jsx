@@ -1,25 +1,21 @@
-import React from 'react'
-import './Home.css'
-import { Link, Route, Routes } from 'react-router-dom'
-import Prueba1 from '../prueba/Prueba1'
+import React from "react";
+import "./Home.css";
 
 function Home() {
   return (
-    <div className='home'>
-      <div className='home-nav'>
-        <ul>
-        <Link to={"prueba"}>prueba</Link>
-        <li>tienda</li>
-        <li>datos</li>
-        <li>ind</li>
-        </ul>
+    <div className="home">
+      <h1>Informacion de Compania</h1>
+      <img src="./img/logo.jpg" alt="inicio" />
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          deleniti dolore excepturi asperiores molestias aut repellat vitae enim
+          est. Nemo alias sed voluptatibus blanditiis officia exercitationem
+          veritatis praesentium consequuntur! Nam.
+        </p>
       </div>
-      <Routes>
-        <Route path='prueba' element={<Prueba1 />}/>
-
-      </Routes>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
