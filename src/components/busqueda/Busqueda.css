@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   padding: 10px 0;
-
+  overflow: hidden;
 }
 .busqueda-busqueda{
   padding: 10px 0;
@@ -37,11 +37,9 @@
 }
 .busqueda-tabla{
   width: 95%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding: 15px 0;
-  overflow: scroll;
+  overflow-x: scroll;
+
 }
 .busqueda-tabla>table{
   width: 90%;

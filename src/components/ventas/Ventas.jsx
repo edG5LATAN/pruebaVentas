@@ -82,6 +82,9 @@ function Ventas() {
           <label>id</label>
           <input onChange={(e)=>setid(e.target.value)} type="text" value={id}/>
 
+          <label>Abono</label>
+          <input className="abono-input" type="checkbox" />
+
           <label>fecha</label>
           <input onChange={(e)=>setfecha(e.target.value)} type="date" value={fecha} />
 
