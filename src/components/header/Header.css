@@ -43,3 +43,50 @@ nav>ul>li:hover{
   scale: 1.03;
   cursor: pointer;
 }
+@media (max-width:480px) {
+  .header{
+    background-color: lightseagreen;
+    height: 90px;
+    margin: 0;
+  }
+  .header>img{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+  .header>h1{
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-size:14px ;
+  }
+  nav>ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding:5px;
+    margin: 5px;
+    overflow: hidden;
+  }
+  nav>ul>li{
+    color: white;
+    list-style: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+  }
+  nav>ul>li:hover{
+    scale: 1.03;
+    cursor: pointer;
+     background-color: lightblue;
+     border-radius: 10px;
+     border:1px solid lightblue;
+     color: blue;
+  }
+}

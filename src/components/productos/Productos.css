@@ -18,7 +18,6 @@
   align-items: center;
   justify-content: center;
   width: 90%;
-  border: 1px solid black;
 }
 .productos-form>form>input ,label{
   padding: 4px;
@@ -69,4 +68,13 @@ margin: 10px 0;
 .productos-table>table>tbody>tr:hover{
   background-color: lightblue;
   cursor: pointer;
+}
+@media (max-width:480px){
+  .productos-form-botones>button{
+    width: 120px;
+    padding: 4px;
+    font-size: 18px;
+   
+  }
+  
 }

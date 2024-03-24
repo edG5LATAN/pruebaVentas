@@ -14,9 +14,12 @@ function Busqueda() {
             <option value="">tienda</option>
           </select>
         </div>
-        <div>
+        <div className="busqueda-busqueda-info">
           <label>Busqueda</label>
           <input type="search" name="" id="" placeholder="ingrese el nombre" />
+        </div>
+        <div className="busqueda-botones">
+          <button>Buscar</button>
         </div>
       </div>
 

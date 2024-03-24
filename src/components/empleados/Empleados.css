@@ -58,4 +58,11 @@
 .empleado-tabla>table>tbody>tr:hover{
   background-color: lightblue;
 }
+@media (max-width:480px) {
+  .empleado-form-botones>button{
+    width: 120px;
+    padding: 4px;
+    font-size: 18px;
+  }
+}
 

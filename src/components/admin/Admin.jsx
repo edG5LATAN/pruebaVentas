@@ -7,7 +7,7 @@ function Admin() {
     <div className="admin">
       <div className="admin-nav">
         <Link to={"productos"}>productos</Link>
-        <Link to={"empleados"}>empleados</Link>
+        <Link to={"empleados"}>vendedores</Link>
         <Link to={"tiendas"}>tiendas</Link>
         <Link to={"busqueda"}>busqueda</Link>
       </div>

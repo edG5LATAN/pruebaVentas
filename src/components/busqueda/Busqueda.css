@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   padding: 10px 0;
+
 }
 .busqueda-busqueda{
   padding: 10px 0;
@@ -18,26 +19,55 @@
   font-weight: bold;
   padding: 4px;
 }
-.busqueda-busqueda>label{
+.busqueda-opciones>select{
+  width: 200px;
   font-size: 18px;
   font-weight: bold;
   padding: 4px;
 }
-.busqueda-busqueda>input{
+.busqueda-busqueda-info>label{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+}
+.busqueda-busqueda-info>input{
   font-size: 18px;
   font-weight: bold;
   padding: 4px;
 }
 .busqueda-tabla{
+  width: 95%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 15px 0;
+  overflow: scroll;
+}
+.busqueda-tabla>table{
+  width: 90%;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px;
+  border-collapse: collapse;
+}
+.busqueda-tabla>table>thead{
+  background-color: black;
+  color:white;
+  text-align: justify;
+}
+.busqueda-tabla>table>tbody>tr:hover{
+  background-color: lightblue;
+  cursor: pointer;
+}
+.busqueda-botones{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.busqueda-tabla>table{
-  width: 98%;
+.busqueda-botones>button{
+  width: 120px;
+  padding: 4px;
   font-size: 18px;
   font-weight: bold;
-  padding: 4px;
-  border-collapse: collapse;
 }

@@ -1,5 +1,5 @@
 .home{
-  min-height: 900px;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,4 +7,10 @@
 }
 .home>img{
   width: 100px;
+}
+@media (max-width:480px) {
+  .home{
+    min-height:800px;
+    overflow: hidden;
+  }
 }

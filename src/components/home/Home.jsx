@@ -6,7 +6,7 @@ function Home() {
     <div className="home">
       <h1>Informacion de Compania</h1>
       <img src="./img/logo.jpg" alt="inicio" />
-      <div>
+      <div >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           deleniti dolore excepturi asperiores molestias aut repellat vitae enim

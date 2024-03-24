@@ -4,7 +4,7 @@
   padding: 10px 0;
   margin: 0;
   display: flex;
-  /* justify-content: center; */
+  background-color: var(--colorFondo);
   flex-direction: column;
   align-items: center;
 }
@@ -70,4 +70,29 @@
 }
 .ventas-mostrar{
   display: block;
+}
+@media (max-width:480px) {
+ 
+  .ventas-botones{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 10px 0;
+  }
+  .ventas-botones>button{
+    background-color: var(--colorBoton);
+    color: white;
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+  }
+  .ventas-botones>button:hover{
+    background-color: var(--colorBotonHover) ;
+    color: var(--colorHoverFont);
+    cursor: pointer;
+  }
 }
