@@ -128,8 +128,8 @@ function Ventas() {
 
           <div className="ventas-botones">
             <button onClick={agregar}>agregar</button>
-            <button>editar</button>
-            <button>eliminar</button>
+            <button onClick={(e)=>e.preventDefault()} >editar</button>
+            <button onClick={(e)=>e.preventDefault()}>eliminar</button>
             <button onClick={limpiar}>limpiar</button>
           </div>
         </form>
