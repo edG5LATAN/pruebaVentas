@@ -19,7 +19,7 @@ function Busqueda() {
     vendedor:"lucas lainez",
     productos:"queso",
     cantidad:"80lbs",
-    tienda:"las torres",
+    tienda:"el patio",
     abono:"no",
     total:1800
   },
@@ -29,9 +29,29 @@ function Busqueda() {
     vendedor:"rigoberto colindres",
     productos:"",
     cantidad:"",
-    tienda:"el patio",
+    tienda:"las torres",
     abono:"si",
     total:1900
+  },
+  {
+    id:4,
+    fecha:"03/04/24",
+    vendedor:"lucas lainez",
+    productos:"",
+    cantidad:"",
+    tienda:"el patio",
+    abono:"si",
+    total:1800
+  },
+  {
+    id:5,
+    fecha:"03/04/24",
+    vendedor:"lucas lainez",
+    productos:"",
+    cantidad:"",
+    tienda:"el patio",
+    abono:"si",
+    total:1800
   }])
   const [select,setselect]=useState("")
   const[variable,setvariable]=useState("")

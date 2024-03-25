@@ -46,7 +46,7 @@ function Ventas() {
 
   const agregar = (e) => {
     e.preventDefault();
-    if ( fecha!="" && vendedor!="" && producto!=""&&cantidad!=""&&tienda!=""&&precio!="") {
+    if ( fecha!="" && vendedor!="" &&tienda!=""&&precio!="") {
       let newd = {
         id:id,
         fecha:fecha,
@@ -54,6 +54,7 @@ function Ventas() {
         producto:producto,
         cantidad:cantidad,
         tienda:tienda,
+        abono:abono,
         precio:precio
       };
       setdata([...data, newd]);
@@ -81,7 +82,7 @@ function Ventas() {
     e.preventDefault();
     lipiarInput(e);
   };
-  const lipiarInput = (e) => {
+  const lipiarInput = () => {
     setid("")
     setfecha("")
     setvendedor("")
@@ -93,9 +94,7 @@ function Ventas() {
     seterror("")
   };
 
-  const checkedCambio=(e)=>{
-    console.log(e.target.checked)
-  }
+  
 
 
   return (
@@ -106,7 +105,7 @@ function Ventas() {
           <input onClick={(e)=>setabono(e.target.checked)} onChange={(e)=>setid(e.target.value)} type="text" value={id}/>
 
           <label>Abono</label>
-          <input onChange={checkedCambio} checked={abono}  className="abono-input" type="checkbox" />
+          <input onChange={(e)=>setabono(e.target.checked)} checked={abono}  className="abono-input" type="checkbox" />
 
           <label>fecha</label>
           <input onChange={(e)=>setfecha(e.target.value)} type="date" value={fecha} />

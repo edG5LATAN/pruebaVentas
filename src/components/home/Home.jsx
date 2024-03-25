@@ -4,7 +4,7 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-      <h1>Informacion de Compania</h1>
+      <h1>INVERSIONES SALGADO</h1>
       <img src="./img/logo.jpg" alt="inicio" />
       <div className="home-info">
         <p>
