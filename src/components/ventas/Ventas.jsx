@@ -10,6 +10,7 @@ function Ventas() {
       producto: "mantequilla",
       cantidad: "200",
       tienda: "los gemelos",
+      abono:true,
       precio: "1500",
     },
     {
@@ -19,8 +20,19 @@ function Ventas() {
       producto: "queso",
       cantidad: "300",
       tienda: "los abarrotes",
+      abono:true,
       precio: "2000",
     },
+    {
+      id: "03",
+      fecha: "06/3/24",
+      vendedor: "marcos tapia",
+      producto: "cuajada",
+      cantidad: "499",
+      tienda: "don luis",
+      abono:false,
+      precio: "800",
+    }
   ]);
   const [id,setid]=useState(0)
   const [fecha,setfecha]=useState("")
@@ -29,6 +41,7 @@ function Ventas() {
   const [cantidad,setcantidad]=useState("")
   const [tienda,settienda]=useState("")
   const [precio,setprecio]=useState("")
+  const [abono,setabono]=useState("")
   const [error,seterror]=useState("")
 
   const agregar = (e) => {
@@ -52,13 +65,16 @@ function Ventas() {
   };
 
   const mostrarDatos=(e)=>{
+    
     setid(e.target.parentNode.childNodes[0].textContent)
     setfecha(e.target.parentNode.childNodes[1].textContent)
     setvendedor(e.target.parentNode.childNodes[2].textContent)
     setproducto(e.target.parentNode.childNodes[3].textContent)
     setcantidad(e.target.parentNode.childNodes[4].textContent)
-    settienda(e.target.parentNode.childNodes[5].textContent)
-    setprecio(e.target.parentNode.childNodes[6].textContent)
+    settienda(e.target.parentNode.childNodes[5].textContent)    
+    setabono(e.target.parentNode.childNodes[6].textContent=="si"?true:false)
+    setprecio(e.target.parentNode.childNodes[7].textContent)
+
   }
 
   const limpiar = (e) => {
@@ -73,17 +89,24 @@ function Ventas() {
     setcantidad("")
     settienda("")
     setprecio("")
+    setabono(false)
     seterror("")
   };
+
+  const checkedCambio=(e)=>{
+    console.log(e.target.checked)
+  }
+
+
   return (
     <div className="ventas">
       <div className="ventas-forms">
         <form>
           <label>id</label>
-          <input onChange={(e)=>setid(e.target.value)} type="text" value={id}/>
+          <input onClick={(e)=>setabono(e.target.checked)} onChange={(e)=>setid(e.target.value)} type="text" value={id}/>
 
           <label>Abono</label>
-          <input className="abono-input" type="checkbox" />
+          <input onChange={checkedCambio} checked={abono}  className="abono-input" type="checkbox" />
 
           <label>fecha</label>
           <input onChange={(e)=>setfecha(e.target.value)} type="date" value={fecha} />
@@ -123,6 +146,7 @@ function Ventas() {
               <td>producto</td>
               <td>cantidad</td>
               <td>tienda</td>
+              <td>abono</td>
               <td>total</td>
             </tr>
           </thead>
@@ -136,6 +160,7 @@ function Ventas() {
                   <td>{res.producto}</td>
                   <td>{res.cantidad}</td>
                   <td>{res.tienda}</td>
+                  <td>{res.abono?"si":"no"}</td>
                   <td>{res.precio}</td>
                 </tr>
               );

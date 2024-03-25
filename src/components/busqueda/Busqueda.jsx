@@ -38,9 +38,13 @@ function Busqueda() {
 
   const buscar=()=>{
     let ddtt=data.filter(res=>{
-      return res.vendedor==`${variable}`
+      return res[select]==variable
     })
     setdata(ddtt)
+  }
+
+  const regresar=()=>{
+     setdata(data)
   }
 
   return (
@@ -61,6 +65,7 @@ function Busqueda() {
         </div>
         <div className="busqueda-botones">
           <button onClick={buscar}>Buscar</button>
+          <button onClick={regresar}>regresar</button>
         </div>
       </div>
 
