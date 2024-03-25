@@ -9,10 +9,10 @@
   height: 100px;
 }
 .header>img{
-  width: 90px;
+  width: 100px;
   border-radius: 50%;
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 10px;
 }
 .header>h1{
@@ -50,11 +50,11 @@ nav>ul>li:hover{
     margin: 0;
   }
   .header>img{
-    width: 50px;
+    width: 70px;
     border-radius: 50%;
     position: absolute;
     top: 5px;
-    left: 10px;
+    left: 5px;
   }
   .header>h1{
     color: white;
