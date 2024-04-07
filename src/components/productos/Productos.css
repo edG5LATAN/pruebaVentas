@@ -70,6 +70,9 @@ margin: 10px 0;
   cursor: pointer;
 }
 @media (max-width:480px){
+  .productos-form{
+    width: 98%;
+  }
   .productos-form-botones>button{
     width: 120px;
     padding: 4px;

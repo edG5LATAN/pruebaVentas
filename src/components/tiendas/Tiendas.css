@@ -9,7 +9,7 @@
 .tienda-form{
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   justify-content: center;
 }
 .tienda-form>form{
@@ -57,4 +57,9 @@
 }
 .tiendas-table>table>tbody>tr:hover{
   background-color: lightblue;
+}
+@media (max-width:480px) {
+  .tienda-form{
+    width: 98%;
+  }
 }
