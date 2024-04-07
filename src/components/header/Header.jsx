@@ -9,7 +9,8 @@ function Header() {
 
   return (
     <div className='header'>
-      <img src="../img/logo.jpg" alt="info hoja" />
+      <img src="../img/logo.png
+      " alt="info hoja" />
       <h1>Creacion de app de ventas</h1>
       <nav>
         <ul>

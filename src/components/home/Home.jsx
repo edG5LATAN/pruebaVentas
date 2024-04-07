@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home">
       <h1>INVERSIONES SALGADO</h1>
-      <img src="./img/logo.jpg" alt="inicio" />
+      <img src="./img/logo.png" alt="inicio" />
       <div className="home-info">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam

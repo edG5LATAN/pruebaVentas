@@ -8,6 +8,7 @@
   background-image:var(--imagenSinFondo);
   background-repeat: no-repeat;
   overflow: hidden;
+background-size: 200px;
 }
 .home>img{
   width: 100px;

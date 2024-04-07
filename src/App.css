@@ -3,6 +3,6 @@
   --colorBoton:rgb(0, 0, 255);
   --colorBotonHover: rgb(173, 216, 230);
   --colorHoverFont:rgb(0, 0, 255);
-  --imagenSinFondo:url("../public/img/logoRemove.png");
-  --imagenFondo:url("../public/img/logo.jpg");
+  --imagenSinFondo:url("../public/img/logo.png");
+  --imagenFondo:url("../public/img/logo.png");
 }
